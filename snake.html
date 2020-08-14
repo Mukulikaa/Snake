@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Snake</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <style>
+            #gameCanvas {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: solid 3px red;
+            }
+            .scores {
+                text-align: center;
+            }
+            .buttons {
+                position: absolute;
+                top: 90%;
+                left: 43%;
+            }
+            body {
+                background-image: url("snake.jpg");
+                background-repeat: none;
+                background-position: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <h1 class="scores">Score</h1>
+        <h1 id="score" class="scores">0</h1>
+        <div class="buttons">
+            <button class="btn btn-success btn-small" id="reset">Reset</button>
+            <button class="btn btn-success btn-small" id="play">Play</button>
+            <button class="btn btn-success btn-small" id="stop">Stop</button>
+        </div>
+        <script src="snake.js"></script>
+    </body>
+</html>
